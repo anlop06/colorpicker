@@ -1,0 +1,53 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(90deg, #8591e1 0%, #a0ebd3 100%);
+    margin-top: 100px;
+
+}
+
+h2:hover {
+    animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+body {
+    display: flex;
+    font-family: 'Work Sans', sans-serif;
+    /* font-family: 'Open Sans', sans-serif; */
+    align-items: center;
+    justify-content: center;
+}
+
+.salida {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    width: 30%;
+    height: 100px;
+    margin: 10px auto;
+    border: 1px solid black;
+}
+
+@keyframes myAnim {
+	0%,
+	50%,
+	100% {
+		opacity: 1;
+	}
+
+	25%,
+	75% {
+		opacity: 0;
+	}
+}
